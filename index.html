@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>My Beloved Friuts</title>
+</head>
+<body>
+
+	<h1>Food List</h1>
+
+	<style type="text/css">
+
+		header {
+			display: flex;
+			justify-content: center;
+			background-color: green;
+		}
+
+		h1 {
+			display: flex;
+			justify-content: center;
+		}
+
+		li {
+			display: flex;
+			justify-content: center;
+			background-color: red;
+			margin top: 50px;
+			padding: 30px;
+		}
+
+		button {
+			padding-left: 30px;
+			margin: 30px;
+		}
+
+		input {
+			padding-right: 30px;
+			margin: 30px;
+		}
+
+
+	</style>
+
+	<main>
+
+		<div>
+			<header id="Friut-form">
+			
+				<input id="Friut-form" type="text" placeholder="enter friut name">
+				<button onclick="addfriut()">Add Friut</button>
+			</header>
+		</div>
+
+		<section id="friuts">
+			<ul id="friuts list">
+				<li>apple</li>
+			</ul>
+		</section>
+		
+
+	</main>
+
+	<script type="text/javascript">
+		function addfriut(){
+
+			let friut_name = document.getElementById("Friut-name").value
+
+			let unordered_list = document.getElementById("friut-list")
+
+			let list_element = document.createElement("li")
+
+			list_element.innerText = friut_name
+
+			unordered_list.appendchild(list_element)
+
+		}
+	</script>
+
+
+</body>
+
+</html>
